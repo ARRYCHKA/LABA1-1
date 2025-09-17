@@ -9,26 +9,12 @@ namespace L1
 {
     public class Logic
     {
-        List<Car> Cars = new List<Car>();
-        public void AddCar(string carBrand, string carModel, string carColor)
+        List<Car> cars = new List<Car>();
+        public void AddCar(string brand, string model, string color)
         {
-            Car car = new Car()
-            {
-                Brand = carBrand,
-                Model = carModel,
-                Color = carColor
-            };
-            Cars.Add(car);              
+            
+        }
 
-        }
-        public string GetAll()
-        {
-            string s = string.Empty;
-            foreach (Car car in Cars)
-            {
-                s += car.Brand + "" + car.Model + "" + car.Color;
-            }
-            return s;
-        }
+
     }
 }
